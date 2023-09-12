@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post"  action="http://172.21.69.152:3000" > 
+        <div class="input-field"> 
+           <input type="text" class="form-control" id="username" name="username" required
+                      data-validation-required-message="Please enter your name" />
+                       <label for="name" class="">用户名</label>
+             <p class="help-block"></p> 
+ 
+            </div> 	
+               <div class="input-field"> 
+           <input type="email" class="form-control" name="email"
+                              id="email" required
+                         data-validation-required-message="Please enter your email" /> 
+                        <label for="email" class="">邮箱</label>
+             <p class="help-block"></p> 
+       </div> 	
+              <div class="input-field"> 
+                <textarea rows="10" cols="100" class="form-control materialize-textarea" id="message" name="message" required
+              data-validation-required-message="Please enter your message" minlength="5" 
+                      data-validation-minlength-message="Min 5 characters" 
+                       maxlength="999" style="resize:none"></textarea>
+                        <label for="message" class="">建议</label> 
+              </div> 		 
+        <div id="success"> </div> <!-- For success/fail messages -->
+       <button type="submit" class="btn btn-primary waves-effect waves-dark pull-right" id="submit">加入</button><br />
+         </form>
+    <h1>about us</h1>
+</body>
+</html>

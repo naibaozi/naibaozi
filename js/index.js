@@ -1,0 +1,1 @@
+let logFrom = document.querySelector('.');
